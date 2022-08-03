@@ -1,0 +1,11 @@
+### IntelliJ IDEA ###
+.idea
+
+### VS Code ###
+.vscode/
+
+### macOS Temporary Files ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
