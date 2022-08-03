@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.button.setTitle("title1", for: .normal)
+        self.button.setTitle("login", for: .normal)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
