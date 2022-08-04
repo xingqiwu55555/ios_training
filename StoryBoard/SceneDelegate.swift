@@ -18,27 +18,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let viewController = CodingViewController1()
-        viewController.view.backgroundColor = .white
-        
-        let navigationController = UINavigationController(rootViewController: viewController)
-        navigationController.tabBarItem = UITabBarItem(title: "vc1", image: nil, selectedImage: nil)
-        
-        let viewController3 = CodingViewController3()
-        viewController3.view.backgroundColor = .orange
-        
-        let navigationController3 = UINavigationController(rootViewController: viewController3)
-        navigationController3.tabBarItem = UITabBarItem(title: "vc3", image: nil, selectedImage: nil)
-        
-        let tabbarController = UITabBarController()
-        tabbarController.viewControllers = [
-            navigationController,
-            navigationController3
-        ]
+        let tabbarController = TabbarController()
 
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = tabbarController
         window.makeKeyAndVisible()
+        print("display window")
         
         self.window = window
     }

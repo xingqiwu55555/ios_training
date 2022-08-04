@@ -13,7 +13,11 @@
 		07C05BAB2899625A00DDD0DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C05BA92899625A00DDD0DA /* Main.storyboard */; };
 		07C05BAD2899625F00DDD0DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C05BAC2899625F00DDD0DA /* Assets.xcassets */; };
 		07C05BB02899625F00DDD0DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C05BAE2899625F00DDD0DA /* LaunchScreen.storyboard */; };
-		07C05BB8289A5D4F00DDD0DA /* CodingViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C05BB7289A5D4F00DDD0DA /* CodingViewControllers.swift */; };
+		07C05BB8289A5D4F00DDD0DA /* CodingViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C05BB7289A5D4F00DDD0DA /* CodingViewController3.swift */; };
+		07C05BBC289B65B300DDD0DA /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C05BBB289B65B300DDD0DA /* TabbarController.swift */; };
+		07C05BBE289B672C00DDD0DA /* CodingViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C05BBD289B672C00DDD0DA /* CodingViewController1.swift */; };
+		07C05BC0289B675900DDD0DA /* CodingViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C05BBF289B675900DDD0DA /* CodingViewController2.swift */; };
+		07C05BC2289B67BB00DDD0DA /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C05BC1289B67BB00DDD0DA /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +29,11 @@
 		07C05BAC2899625F00DDD0DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C05BAF2899625F00DDD0DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07C05BB12899625F00DDD0DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07C05BB7289A5D4F00DDD0DA /* CodingViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingViewControllers.swift; sourceTree = "<group>"; };
+		07C05BB7289A5D4F00DDD0DA /* CodingViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingViewController3.swift; sourceTree = "<group>"; };
+		07C05BBB289B65B300DDD0DA /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		07C05BBD289B672C00DDD0DA /* CodingViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingViewController1.swift; sourceTree = "<group>"; };
+		07C05BBF289B675900DDD0DA /* CodingViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingViewController2.swift; sourceTree = "<group>"; };
+		07C05BC1289B67BB00DDD0DA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +68,34 @@
 			children = (
 				07C05BA32899625A00DDD0DA /* AppDelegate.swift */,
 				07C05BA52899625A00DDD0DA /* SceneDelegate.swift */,
-				07C05BA72899625A00DDD0DA /* ViewController.swift */,
-				07C05BB7289A5D4F00DDD0DA /* CodingViewControllers.swift */,
+				07C05BBA289B655800DDD0DA /* ViewControllers */,
+				07C05BB9289B651A00DDD0DA /* views */,
 				07C05BA92899625A00DDD0DA /* Main.storyboard */,
 				07C05BAC2899625F00DDD0DA /* Assets.xcassets */,
 				07C05BAE2899625F00DDD0DA /* LaunchScreen.storyboard */,
 				07C05BB12899625F00DDD0DA /* Info.plist */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		07C05BB9289B651A00DDD0DA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				07C05BC1289B67BB00DDD0DA /* CustomCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		07C05BBA289B655800DDD0DA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				07C05BA72899625A00DDD0DA /* ViewController.swift */,
+				07C05BBB289B65B300DDD0DA /* TabbarController.swift */,
+				07C05BBD289B672C00DDD0DA /* CodingViewController1.swift */,
+				07C05BBF289B675900DDD0DA /* CodingViewController2.swift */,
+				07C05BB7289A5D4F00DDD0DA /* CodingViewController3.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07C05BB8289A5D4F00DDD0DA /* CodingViewControllers.swift in Sources */,
+				07C05BC0289B675900DDD0DA /* CodingViewController2.swift in Sources */,
+				07C05BBE289B672C00DDD0DA /* CodingViewController1.swift in Sources */,
+				07C05BB8289A5D4F00DDD0DA /* CodingViewController3.swift in Sources */,
 				07C05BA82899625A00DDD0DA /* ViewController.swift in Sources */,
 				07C05BA42899625A00DDD0DA /* AppDelegate.swift in Sources */,
+				07C05BBC289B65B300DDD0DA /* TabbarController.swift in Sources */,
+				07C05BC2289B67BB00DDD0DA /* CustomCell.swift in Sources */,
 				07C05BA62899625A00DDD0DA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +328,7 @@
 				DEVELOPMENT_TEAM = JWZ893HKXY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StoryBoard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Storyboard;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.sxm.StoryBoard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.sxm.storyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -324,6 +357,7 @@
 				DEVELOPMENT_TEAM = JWZ893HKXY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StoryBoard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Storyboard;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +368,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.sxm.StoryBoard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.sxm.storyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
