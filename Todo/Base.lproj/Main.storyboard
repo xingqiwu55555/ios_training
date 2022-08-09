@@ -116,7 +116,7 @@
         <!--今日待办-->
         <scene sceneID="vpU-yf-NVl">
             <objects>
-                <viewController title="今日待办" id="jd0-YP-a6d" sceneMemberID="viewController">
+                <viewController title="今日待办" id="jd0-YP-a6d" customClass="TodoListViewController" customModule="Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qad-Sm-pCK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
