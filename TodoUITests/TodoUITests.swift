@@ -2,7 +2,7 @@
 //  TodoUITests.swift
 //  TodoUITests
 //
-//  Created by Weidong Gu on 2022/7/26.
+//  Created by xmshen on 2022/8/9.
 //
 
 import XCTest
@@ -27,6 +27,7 @@ class TodoUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
+        // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
