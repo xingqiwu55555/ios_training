@@ -18,7 +18,7 @@ struct MapView: View {
     
     var body: some View {
 //        Text("Hello world!")
-        Map(coordinateRegion: region)
+        Map(coordinateRegion: $region)
     }
 }
 
