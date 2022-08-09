@@ -81,6 +81,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QME-WD-LDE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T1D-Bd-DOl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -137,7 +138,7 @@
         <!--新增待办-->
         <scene sceneID="ydR-A5-N8o">
             <objects>
-                <viewController title="新增待办" id="CpC-hu-3ON" sceneMemberID="viewController">
+                <viewController title="新增待办" id="CpC-hu-3ON" customClass="CreateTodoViewController" customModule="Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6g3-gi-7Ae">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,6 +165,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="新增待办" id="s5D-Rw-KT1"/>
+                    <connections>
+                        <outlet property="confirmBtn" destination="ef9-mW-1sj" id="XGd-M7-bao"/>
+                        <outlet property="textField" destination="sc4-gS-dWE" id="aIn-CG-9Y4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mwf-Su-sIT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

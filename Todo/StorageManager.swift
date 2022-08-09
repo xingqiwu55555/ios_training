@@ -23,5 +23,7 @@ struct StorageManager {
     var todoList = defaultStand.stringArray(forKey: TODO_LIST_KEY) ?? []
     todoList.append(content)
     defaultStand.set(todoList, forKey: TODO_LIST_KEY)
+      
+    print("create todo successfully: \(content)")
   }
 }
