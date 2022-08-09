@@ -17,6 +17,8 @@ class TodoListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "删除全部", style: UIBarButtonItem.Style.plain, target: self, action: #selector(deleteAll))
         
         initTableView()
     }
@@ -32,9 +34,18 @@ class TodoListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print(#function, 111111)
 
-        todos = StorageManager.getTodoList()
+        reloadTabeView(data: StorageManager.getTodoList())
+    }
+    
+    @objc
+    func deleteAll(sender: UIBarButtonItem) {
+        StorageManager.deleteAllTodoList()
+        reloadTabeView(data: [])
+    }
+    
+    func reloadTabeView(data: Array<String>) {
+        todos = data
         tableView.reloadData()
     }
 
