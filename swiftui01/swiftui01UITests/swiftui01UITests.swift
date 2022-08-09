@@ -1,13 +1,13 @@
 //
-//  TodoUITests.swift
-//  TodoUITests
+//  swiftui01UITests.swift
+//  swiftui01UITests
 //
 //  Created by xmshen on 2022/8/9.
 //
 
 import XCTest
 
-class TodoUITests: XCTestCase {
+class swiftui01UITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
