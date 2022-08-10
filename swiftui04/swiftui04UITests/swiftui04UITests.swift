@@ -1,13 +1,13 @@
 //
-//  swiftui03UITests.swift
-//  swiftui03UITests
+//  swiftui04UITests.swift
+//  swiftui04UITests
 //
 //  Created by xmshen on 2022/8/10.
 //
 
 import XCTest
 
-class swiftui03UITests: XCTestCase {
+class swiftui04UITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
