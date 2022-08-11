@@ -1,14 +1,14 @@
 //
-//  swiftui05App.swift
-//  swiftui05
+//  swiftui06App.swift
+//  swiftui06
 //
-//  Created by xmshen on 2022/8/10.
+//  Created by xmshen on 2022/8/11.
 //
 
 import SwiftUI
 
 @main
-struct swiftui05App: App {
+struct swiftui06App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
