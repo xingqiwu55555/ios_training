@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ExplorationView: View {
     var body: some View {
-        Text("发现")
+        NavigationView {
+            ExplorationListView()
+            .navigationTitle("发现")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 

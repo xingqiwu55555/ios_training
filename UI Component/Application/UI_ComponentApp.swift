@@ -24,6 +24,7 @@ struct Application: App {
                     .tabItem {
                         Label("发现", systemImage: "safari.fill")
                     }
+                    .navigationTitle("发现")
                 MeView()
                     .tabItem {
                         Label("我", systemImage: "person.fill")
