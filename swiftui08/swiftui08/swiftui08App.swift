@@ -1,14 +1,14 @@
 //
-//  swiftui07App.swift
-//  swiftui07
+//  swiftui08App.swift
+//  swiftui08
 //
-//  Created by xmshen on 2022/8/11.
+//  Created by xmshen on 2022/8/12.
 //
 
 import SwiftUI
 
 @main
-struct swiftui07App: App {
+struct swiftui08App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

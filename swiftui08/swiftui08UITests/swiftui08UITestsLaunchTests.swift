@@ -1,13 +1,13 @@
 //
-//  swiftui07UITestsLaunchTests.swift
-//  swiftui07UITests
+//  swiftui08UITestsLaunchTests.swift
+//  swiftui08UITests
 //
-//  Created by xmshen on 2022/8/11.
+//  Created by xmshen on 2022/8/12.
 //
 
 import XCTest
 
-class swiftui07UITestsLaunchTests: XCTestCase {
+class swiftui08UITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
