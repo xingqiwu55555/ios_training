@@ -1,14 +1,14 @@
 //
-//  swiftui06Tests.swift
-//  swiftui06Tests
+//  swiftui07Tests.swift
+//  swiftui07Tests
 //
 //  Created by xmshen on 2022/8/11.
 //
 
 import XCTest
-@testable import swiftui06
+@testable import swiftui07
 
-class swiftui06Tests: XCTestCase {
+class swiftui07Tests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
