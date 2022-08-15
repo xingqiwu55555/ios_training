@@ -9,7 +9,15 @@ import SwiftUI
 
 struct TimelineView: View {
     var body: some View {
-        Text("Hello World!")
+        NavigationView {
+            ScrollView {
+                TimelineHeaderView(nickname: "桃子猪", profileImageName: "timeline_profile_image", backgroundImageName: "timeline_profile_background")
+                TimelineContentView()
+            }
+            .navigationBarHidden(true)
+        }
+        .navigationTitle("朋友圈")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -13,12 +13,25 @@ struct TimelineHeaderView: View {
     let backgroundImageName: String
     
     var body: some View {
-        Text("Hello World!")
+        ZStack(alignment: .bottomTrailing) {
+            Image(backgroundImageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            HStack {
+                Text(nickname)
+                    .foregroundColor(.white)
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                Image(profileImageName)
+                    .resizable()
+                    .frame(width: 80, height: 80)
+            }.offset(x: -20, y: 20)
+        }
     }
 }
 
 struct TimelineHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        TimelineHeaderView(nickname: "桃子猪2222222", profileImageName: "timeline_profile_image", backgroundImageName: "timeline_profile_background")
+        TimelineHeaderView(nickname: "桃子猪", profileImageName: "timeline_profile_image", backgroundImageName: "timeline_profile_background")
     }
 }
