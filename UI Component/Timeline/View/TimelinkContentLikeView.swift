@@ -11,7 +11,18 @@ struct TimelinkContentLikeView: View {
     let like: [String]
     
     var body: some View {
-        Text("Hello World!")
+        HStack {
+            Image(systemName: "heart")
+                .resizable()
+                .frame(width: 20, height: 20)
+            ForEach(like, id: \.self) { name in
+                Text(name)
+                    .fontWeight(.light)
+            }
+        }
+        .frame(height: 24)
+        .foregroundColor(.white)
+        .background(.gray)
     }
 }
 

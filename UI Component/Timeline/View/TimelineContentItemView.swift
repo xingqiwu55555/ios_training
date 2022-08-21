@@ -15,7 +15,32 @@ struct TimelineContentItemView: View {
     let like: [String]?
     
     var body: some View {
-        Text("Hello World!")
+        HStack(alignment: .top) {
+            Image(profileImageName)
+                .resizable()
+                .frame(width: 60, height: 60)
+            
+            GeometryReader { geometry in
+                VStack(alignment: .leading) {
+                    Text(profileNick)
+                        .fontWeight(.medium)
+                        .padding(.bottom, 1)
+                    Text(content).fontWeight(.light)
+                    if singlePhotoName != nil {
+                        
+                            Image(singlePhotoName!)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: geometry.size.width)
+                                .clipped()
+                        
+                    }
+                    if like != nil {
+                        TimelinkContentLikeView(like: like!)
+                    }
+                }
+            }
+        }.padding(.horizontal, 16)
     }
 }
 
@@ -31,12 +56,12 @@ struct TimelineContentItemView_Previews: PreviewProvider {
                                     profileNick: "桃子猪",
                                     content: "不是我矫情,这年呐~,就是得和家人一起过才有味道.",
                                     singlePhotoName: "timeline_profile_image_lu_photo1",
-                                    like: nil)
+                                    like: ["草莓兔"])
             TimelineContentItemView(profileImageName: "timeline_profile_image",
                                     profileNick: "桃子猪",
                                     content: "不是我矫情,这年呐~,就是得和家人一起过才有味道.",
                                     singlePhotoName: "timeline_profile_image_lu_photo1",
-                                    like: ["草莓兔"])
+                                    like: ["草莓兔", "桃子桃子好好吃"])
         }
     }
 }
