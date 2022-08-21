@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070D96F128B2157400D57E30 /* TimelineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D96F028B2157400D57E30 /* TimelineViewModel.swift */; };
 		07F1AEBC28A63D1000792E9A /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F1AEBB28A63D1000792E9A /* MeView.swift */; };
 		07F1AEBF28A63D6A00792E9A /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F1AEBE28A63D6A00792E9A /* ContactsView.swift */; };
 		07F1AEF928A6591B00792E9A /* ExplorationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F1AEF828A6591B00792E9A /* ExplorationListView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		070D96F028B2157400D57E30 /* TimelineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewModel.swift; sourceTree = "<group>"; };
 		07F1AEBB28A63D1000792E9A /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		07F1AEBE28A63D6A00792E9A /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		07F1AEF828A6591B00792E9A /* ExplorationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorationListView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070D96F228B2157C00D57E30 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				070D96F028B2157400D57E30 /* TimelineViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		07F1AEBA28A63CF500792E9A /* Me */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +151,7 @@
 		8EFF8CEE279AAAAD00956FA1 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
+				070D96F228B2157C00D57E30 /* ViewModel */,
 				8EFF8CEF279AAB2C00956FA1 /* View */,
 			);
 			path = Timeline;
@@ -229,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EFF8CF7279ABD0300956FA1 /* TimelinkContentLikeView.swift in Sources */,
+				070D96F128B2157400D57E30 /* TimelineViewModel.swift in Sources */,
 				8EE3807A279A89B900A19AE4 /* ExplorationView.swift in Sources */,
 				8EFF8CF5279ABC4A00956FA1 /* TimelineContentItemView.swift in Sources */,
 				07F1AEF928A6591B00792E9A /* ExplorationListView.swift in Sources */,

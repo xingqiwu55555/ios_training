@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct TimelineView: View {
+    @StateObject var viewModel = TimelineViewModel()
+
     var body: some View {
-        NavigationView {
-            ScrollView {
-                TimelineHeaderView(nickname: "桃子猪", profileImageName: "timeline_profile_image", backgroundImageName: "timeline_profile_background")
-                TimelineContentView()
-            }
-            .navigationBarHidden(true)
+        List {
+            TimelineHeaderView(nickname: "桃子猪", profileImageName: "timeline_profile_image", backgroundImageName: "timeline_profile_background")
+            TimelineContentView(timelines: viewModel.timelines)
         }
+        .listStyle(PlainListStyle())
         .navigationTitle("朋友圈")
         .navigationBarTitleDisplayMode(.inline)
     }

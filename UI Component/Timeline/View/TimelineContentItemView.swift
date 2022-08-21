@@ -19,28 +19,27 @@ struct TimelineContentItemView: View {
             Image(profileImageName)
                 .resizable()
                 .frame(width: 60, height: 60)
-            
-            GeometryReader { geometry in
+
                 VStack(alignment: .leading) {
                     Text(profileNick)
                         .fontWeight(.medium)
                         .padding(.bottom, 1)
-                    Text(content).fontWeight(.light)
+                    Text(content)
+                        .fontWeight(.light)
+                        .fixedSize(horizontal: false, vertical: true)
                     if singlePhotoName != nil {
                         
                             Image(singlePhotoName!)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(width: geometry.size.width)
                                 .clipped()
                         
                     }
                     if like != nil {
                         TimelinkContentLikeView(like: like!)
                     }
-                }
             }
-        }.padding(.horizontal, 16)
+        }
     }
 }
 

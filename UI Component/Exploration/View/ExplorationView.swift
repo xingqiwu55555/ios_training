@@ -11,8 +11,8 @@ struct ExplorationView: View {
     var body: some View {
         NavigationView {
             ExplorationListView()
-            .navigationTitle("发现")
-            .navigationBarTitleDisplayMode(.inline)
+                .navigationTitle("发现")
+                .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

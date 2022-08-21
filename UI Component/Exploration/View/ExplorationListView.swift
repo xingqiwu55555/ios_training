@@ -10,7 +10,7 @@ import SwiftUI
 struct ExplorationListView: View {
     
     var body: some View {
-        List() {
+        List {
             NavigationLink {
                 TimelineView()
             } label: {
