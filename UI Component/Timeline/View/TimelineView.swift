@@ -12,10 +12,11 @@ struct TimelineView: View {
 
     var body: some View {
         List {
-            TimelineHeaderView(nickname: "桃子猪", profileImageName: "timeline_profile_image", backgroundImageName: "timeline_profile_background")
+            TimelineHeaderView(profileDetail: viewModel.profileDetail)
+                .listRowSeparator(.hidden)
             TimelineContentView(timelines: viewModel.timelines)
         }
-        .listStyle(PlainListStyle())
+        .listStyle(.plain)
         .navigationTitle("朋友圈")
         .navigationBarTitleDisplayMode(.inline)
     }

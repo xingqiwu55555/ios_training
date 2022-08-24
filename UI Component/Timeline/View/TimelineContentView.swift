@@ -18,7 +18,7 @@ struct TimelineContentView: View {
                 content: timeline.content,
                 singlePhotoName: timeline.singlePhotoName,
                 like: timeline.like
-            )
+            ).listRowSeparator(.hidden)
         }
     }
 }

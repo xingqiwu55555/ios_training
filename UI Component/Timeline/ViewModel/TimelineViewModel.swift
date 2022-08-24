@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+struct ProfileDetail: Identifiable {
+    let id: String
+    let nickname: String
+    let profileImageName: String
+    let backgroundImageName: String
+}
+
 struct Timeline: Identifiable {
     let id: String
     let profileNick: String
@@ -17,6 +24,13 @@ struct Timeline: Identifiable {
 }
 
 class TimelineViewModel: ObservableObject {
+    @Published var profileDetail: ProfileDetail = ProfileDetail(
+        id: "1",
+        nickname: "桃子猪",
+        profileImageName: "timeline_profile_image",
+        backgroundImageName: "timeline_profile_background"
+    )
+    
     @Published var timelines: [Timeline] = [
         Timeline(
             id: "1",
