@@ -1,13 +1,13 @@
 //
-//  state01UITestsLaunchTests.swift
-//  state01UITests
+//  state02UITestsLaunchTests.swift
+//  state02UITests
 //
 //  Created by xmshen on 2022/9/9.
 //
 
 import XCTest
 
-class state01UITestsLaunchTests: XCTestCase {
+class state02UITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
