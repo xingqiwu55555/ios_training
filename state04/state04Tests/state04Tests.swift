@@ -1,14 +1,14 @@
 //
-//  state03Tests.swift
-//  state03Tests
+//  state04Tests.swift
+//  state04Tests
 //
 //  Created by xmshen on 2022/9/9.
 //
 
 import XCTest
-@testable import state03
+@testable import state04
 
-class state03Tests: XCTestCase {
+class state04Tests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
