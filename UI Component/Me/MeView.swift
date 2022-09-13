@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct MeView: View {
+    @EnvironmentObject var profileModel: ProfileModel
+    
     var body: some View {
-        Text("我")
+        NavigationView {
+            List {
+                NavigationLink {
+                    ProfileView()
+                } label: {
+                    HStack {
+                        Image(profileModel.profileImage)
+                            .resizable()
+                            .frame(width: 60, height: 60)
+
+                        Text(profileModel.profileNick)
+                            .fontWeight(.medium)
+                            .padding(.leading, 8)
+                    }
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("我")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 

@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct Application: App {
+    @StateObject var profileModel = ProfileModel()
+
     var body: some Scene {
         WindowGroup {
             TabView {
@@ -29,6 +31,7 @@ struct Application: App {
                         Label("我", systemImage: "person.fill")
                     }
             }
+            .environmentObject(profileModel)
         }
     }
 }

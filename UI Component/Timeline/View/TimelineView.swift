@@ -12,7 +12,7 @@ struct TimelineView: View {
 
     var body: some View {
         List {
-            TimelineHeaderView(profileDetail: viewModel.profileDetail)
+            TimelineHeaderView()
                 .listRowSeparator(.hidden)
             TimelineContentView(timelines: viewModel.timelines)
         }

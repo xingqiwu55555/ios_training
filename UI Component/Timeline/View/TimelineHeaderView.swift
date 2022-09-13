@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct TimelineHeaderView: View {
-    let profileDetail: ProfileDetail
+    @EnvironmentObject var profileModel: ProfileModel
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
-            Image(profileDetail.backgroundImageName)
+            Image(profileModel.backgroundImageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             HStack {
-                Text(profileDetail.nickname)
+                Text(profileModel.profileNick)
                     .foregroundColor(.white)
                     .font(.title3)
                     .fontWeight(.semibold)
-                Image(profileDetail.profileImageName)
+                Image(profileModel.profileImage)
                     .resizable()
                     .frame(width: 80, height: 80)
             }.offset(x: -20, y: 20)
@@ -30,13 +30,6 @@ struct TimelineHeaderView: View {
 
 struct TimelineHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        TimelineHeaderView(
-            profileDetail: ProfileDetail(
-                id: "1",
-                nickname: "桃子猪",
-                profileImageName: "timeline_profile_image",
-                backgroundImageName: "timeline_profile_background"
-            )
-        )
+        TimelineHeaderView()
     }
 }
